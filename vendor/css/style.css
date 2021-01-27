@@ -1,0 +1,3627 @@
+/* Служебный раздел */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Мобильное меню */
+
+.nav-mobil {
+  width: 100%;
+  height: 138px;
+  float: right;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Логотип */
+.nav_logo {
+  width: 25%;
+  height: 80px;
+  margin-left: 35px;
+  float: left;
+}
+
+.logo-inner a {
+  text-decoration: none;
+}
+
+/* Меню */
+
+.head__nav {
+  position: fixed;
+  max-width: 1197px;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.nav {
+}
+
+.out {
+  transform: translateY(-100%);
+}
+
+.nav li {
+  float: left;
+  list-style-type: none;
+}
+
+#li-fix {
+  float: right;
+  margin-right: 35px;
+}
+
+.nav li a {
+  display: block;
+  padding: 30px 15px 30px 15px;
+  font-size: 1em;
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "IstokWebRegular", sans-serif;
+  letter-spacing: 2px;
+}
+
+.nav li a:hover {
+  background-color: #4a3671;
+  display: block;
+  padding: 30px 15px 30px 15px;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "IstokWebRegular", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Блок для слайдера*/
+
+.header__slider_img {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+/* Стили главного слайдера */
+
+.hover-image-5 a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+  background: #bfe2ff;
+}
+.hover-image-5 a img {
+  opacity: 1;
+  transition: opacity 0.5s;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.hover-image-5 a:hover img {
+  opacity: 0.5;
+}
+.hover-image-5 a div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hover-image-5 a div::before,
+.hover-image-5 a div::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  pointer-events: none;
+}
+.hover-image-5 a div::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: scale(0, 1);
+}
+.hover-image-5 a div::after {
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: scale(1, 0);
+}
+.hover-image-5 a:hover div::before,
+.hover-image-5 a:hover div::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.hover-image-5 div img,
+.hover-image-5 div i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -24px;
+  margin-left: -24px;
+  width: 48px;
+  height: 48px;
+  transition: transform 0.5s ease 0s;
+  transform: scale(0);
+  font-size: 48px;
+  color: #fff;
+}
+.hover-image-5 a:hover div img,
+.hover-image-5 a:hover div i {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* основные стили */
+
+.mobile-header {
+  display: none;
+}
+
+.fon-header {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url(../img/fon1.jpg);
+  background-size: cover;
+}
+
+/* Логотип */
+.logo {
+  width: 30%;
+  height: 90px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.logo-txt {
+  font-family: "IstokWebRegular", sans-serif;
+  text-transform: uppercase;
+  margin-top: 27px;
+  letter-spacing: 0.4em;
+  margin-bottom: -11px;
+  display: block;
+  font-size: 1.85em;
+  width: 59%;
+  transition: 1s;
+  color: #fff;
+}
+
+/* Текст на слайдере */
+
+.info {
+  position: relative;
+  width: 70%;
+  height: 70px;
+  top: 200px;
+  left: 50px;
+}
+
+.info h1 {
+  font-size: 2.75em;
+  color: #fff;
+  font-family: "Exo2Regular", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+/* Второй блок после слайдера WordPress */
+.info-wp {
+  width: 100%;
+  height: 650px;
+  background-color: #3f2d5f;
+  padding-top: 50px;
+}
+
+.info-wp-head {
+  width: 70%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.info-wp-head h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.info-wp-text {
+  width: 80%;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.info-wp-text p {
+  color: #fff;
+  font-size: 1.2em;
+  text-indent: 1.5em;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.info-wp-icons {
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.icons-item {
+  width: 24.5%;
+  height: 340px;
+  display: inline-block;
+}
+
+.icons-item-circle {
+  width: 100%;
+  height: 200px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icons-item-text {
+  width: 80%;
+  height: 145px;
+  margin: 0 auto;
+  margin-left: 69px;
+}
+
+.icons-item-text p {
+  font-size: 1em;
+  color: #fff;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+/* Третий блок, цены */
+
+.prices {
+  width: 100%;
+  height: 775px;
+  padding-top: 50px;
+}
+
+.prices-head-txt {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.prices-head-txt h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.prices-block {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.prices-block-budjet {
+  width: 100%;
+  height: 130px;
+}
+
+.budjet-head {
+  width: 70%;
+  height: 130px;
+  float: left;
+  border-bottom: 1px dotted #3f2d5f;
+  border-left: 1px dotted #3f2d5f;
+  border-top: 1px dotted #3f2d5f;
+}
+
+.budjet-head h2 {
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 20px;
+}
+
+.budjet-head p {
+  margin: 0 30px;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 10px;
+}
+
+.budjet-txt {
+  width: 29.7%;
+  height: 130px;
+  float: left;
+  background-color: #3f2d5f;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+.budjet-txt h3 {
+  margin: 15px 15px;
+  font-family: "IstokWebRegular", sans-serif;
+  margin-top: 38px;
+}
+
+.prices-block-standart {
+  width: 100%;
+  height: 155px;
+}
+
+.standart-head {
+  width: 60%;
+  height: 155px;
+  float: left;
+  border-bottom: 1px dotted #3f2d5f;
+  border-left: 1px dotted #3f2d5f;
+  border-top: 1px dotted #3f2d5f;
+}
+
+.standart-head h2 {
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 20px;
+}
+
+.standart-head p {
+  margin: 0 30px;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 10px;
+}
+
+.standart-txt {
+  width: 39.7%;
+  height: 155px;
+  float: left;
+  color: #fff;
+  background-color: #3f2d5f;
+  border-bottom: 1px dotted #fff;
+}
+
+.standart-txt h3 {
+  margin: 15px 15px;
+  font-family: "IstokWebRegular", sans-serif;
+  margin-top: 28px;
+}
+
+.prices-block-pro {
+  width: 100%;
+  height: 140px;
+}
+
+.pro-head {
+  width: 50%;
+  height: 140px;
+  float: left;
+  border-bottom: 1px dotted #3f2d5f;
+  border-left: 1px dotted #3f2d5f;
+  border-top: 1px dotted #3f2d5f;
+}
+
+.pro-txt {
+  width: 49.7%;
+  height: 140px;
+  float: left;
+  color: #fff;
+  background-color: #3f2d5f;
+  border-bottom: 1px dotted #fff;
+}
+
+.pro-head h2 {
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 20px;
+}
+
+.pro-head p {
+  margin: 0 30px;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 10px;
+}
+
+.pro-txt h3 {
+  margin: 15px 15px;
+  font-family: "IstokWebRegular", sans-serif;
+  margin-top: 23px;
+}
+
+.prices-block-shop {
+  width: 100%;
+  height: 140px;
+}
+
+.shop-head {
+  width: 40%;
+  height: 140px;
+  float: left;
+  border-bottom: 1px dotted #3f2d5f;
+  border-left: 1px dotted #3f2d5f;
+  border-top: 1px dotted #3f2d5f;
+}
+
+.shop-txt {
+  width: 59.7%;
+  height: 140px;
+  float: left;
+  color: #fff;
+  background-color: #3f2d5f;
+}
+
+.shop-head h2 {
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 20px;
+}
+
+.shop-head p {
+  margin: 0 30px;
+  font-family: "Exo2Regular", sans-serif;
+  margin-top: 10px;
+}
+
+.shop-txt h3 {
+  margin: 15px 15px;
+  font-family: "IstokWebRegular", sans-serif;
+  margin-top: 21px;
+}
+
+.prices-block-hour {
+  width: 99.7%;
+  height: 50px;
+  border: 1px dotted #3f2d5f;
+}
+
+.prices-block-hour h3 {
+  margin: 15px 15px;
+  text-align: center;
+  color: #3f2d5f;
+  font-size: 18px;
+  font-family: "IstokWebRegular", sans-serif;
+}
+
+/* Мои работы */
+
+.main-job {
+  width: 100%;
+  height: 650px;
+  padding-top: 50px;
+  background-color: #3f2d5f;
+}
+
+.main-job-head {
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.main-job-head h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.main-job-txt {
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.main-job-txt p {
+  color: #fff;
+  font-size: 1.2em;
+  text-indent: 1.5em;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.main-job-content {
+  width: 80%;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.job-block {
+  width: 31%;
+  height: 250px;
+  margin-left: 15px;
+  float: left;
+}
+
+.job-block img {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.main-job-botton {
+  width: 20%;
+  height: 60px;
+  margin: 30px auto 0px auto;
+}
+
+.main-job-botton a {
+  text-decoration: none;
+}
+
+.main-job-btn {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.main-job-btn h3 {
+  text-align: center;
+  transition: 0.5s;
+  margin-top: 16px;
+  font-family: "IstokWebRegular", sans-serif;
+}
+
+.main-job-btn:hover {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #000;
+}
+
+/* Мой блог*/
+.news-blog {
+  width: 100%;
+  height: 1000px;
+  padding-top: 50px;
+}
+
+.news-blog-head {
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.news-blog-head h1 {
+  font-family: "Exo2Regular", sans-serif;
+  text-align: center;
+}
+
+.news-blog-txt {
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.news-blog-txt p {
+  font-size: 1.2em;
+  text-indent: 1.5em;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.news-blog-content {
+  width: 70%;
+  height: 630px;
+  margin: 30px auto;
+}
+
+.article {
+  width: 100%;
+  height: 200px;
+  border: 1px dotted #3f2d5f;
+}
+
+.article-img {
+  width: 30%;
+  height: 195px;
+  float: left;
+}
+
+.article-txt {
+  width: 69.7%;
+  height: 195px;
+  float: left;
+}
+
+.article-txt-head {
+  width: 100%;
+  height: 50px;
+  padding-top: 12px;
+}
+
+.article-txt-head h3 {
+  font-family: "Exo2Regular", sans-serif;
+  text-align: center;
+}
+
+.article-txt-info {
+  width: 100%;
+  height: 145px;
+}
+
+.article-txt-info p {
+  margin: 10px 30px 10px 30px;
+  font-size: 1.2em;
+  text-indent: 1.5em;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.news-blog-botton {
+  width: 20%;
+  height: 60px;
+  margin: 30px auto 0px auto;
+}
+
+.news-blog-botton a {
+  text-decoration: none;
+}
+
+.article-img img {
+  width: 95%;
+  height: 90%;
+  margin: 10px;
+}
+
+.news-blog-btn {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: #3f2d5f;
+  color: #fff;
+}
+
+.news-blog-btn h3 {
+  text-align: center;
+  margin-top: 16px;
+  transition: 0.5s;
+  font-family: "IstokWebRegular", sans-serif;
+}
+
+.news-blog-btn:hover {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #3f2d5f;
+  border-radius: 3px;
+  color: #3f2d5f;
+  background-color: #fff;
+}
+
+/* футер */
+.foot {
+  width: 100%;
+  height: auto;
+  background-color: #3f2d5f;
+  padding-bottom: 20px;
+}
+
+.foot-head {
+  width: 60%;
+  height: 60px;
+  margin: 55px auto;
+  padding-top: 1px;
+}
+
+.foot-text a {
+  color: #fff;
+}
+
+.foot-head h1 {
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+  color: #fff;
+}
+
+.foot-head p {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Exo2Regular", sans-serif;
+  color: #000;
+  margin-top: 8px;
+  text-indent: 1.5em;
+}
+
+.foot-text {
+  width: 80%;
+  height: auto;
+  border: 1px dotted #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.foot-text a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.foot-text span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  font-family: "IstokWebRegular", sans-serif;
+}
+
+/* стили слайдера */
+
+.banner-container {
+  overflow: hidden;
+  position: relative;
+}
+.banner-container li {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+.banner-container li a {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+.banner-container li a img {
+  max-width: none;
+  height: 350px; /* Высота фотографий */
+}
+.banner-container li span.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* Контактная информация */
+.adress {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  background-color: #3f2d5f;
+  padding-bottom: 50px;
+}
+
+.adress-head {
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.adress-head h1 {
+  font-family: "Exo2Regular", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.adress-txt {
+  width: 80%;
+  height: auto;
+  margin: 5px auto 0px auto;
+  border: 1px solid #3f2d5f;
+}
+
+.adress-txt p {
+  margin: 10px 30px 10px 30px;
+  font-size: 1.2em;
+  text-indent: 1.5em;
+  color: #fff;
+  font-family: "Exo2Regular", sans-serif;
+}
+
+.niz {
+  width: 100%;
+  height: 50px;
+  padding-top: 12px;
+  border-top: 1px solid #fff;
+}
+
+.niz h3 {
+  font-family: "Exo2Regular", sans-serif;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1174px) {
+  .nav li a {
+    display: block;
+    padding: 30px 10px 30px 10px;
+    font-size: 0.8em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav li a:hover {
+    background-color: #4a3671;
+    display: block;
+    padding: 30px 10px 30px 10px;
+    font-size: 0.8em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1.7em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .icons-item-text p {
+    font-size: 0.8em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 570px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .budjet-head p {
+    margin: 0 30px;
+    font-family: "Exo2Regular", sans-serif;
+    font-size: 0.95em;
+    margin-top: 10px;
+  }
+
+  .standart-head p {
+    margin: 0 30px;
+    font-size: 0.95em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 10px;
+  }
+
+  .pro-head p {
+    margin: 0 30px;
+    font-size: 0.95em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 10px;
+  }
+
+  .shop-head p {
+    margin: 0 30px;
+    font-size: 0.95em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 10px;
+  }
+
+  .prices-block-hour h3 {
+    margin: 15px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 30px;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 30px;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 30px;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 30px;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 16px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 680px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .main-job-botton {
+    width: 20%;
+    height: 60px;
+    margin: 0px auto 0px auto;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .niz h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+  }
+} /*  (min-width : 1000px) and (max-width : 1174px) */
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+  .job-block {
+    width: 30%;
+    height: 250px;
+    margin-left: 15px;
+    float: left;
+  }
+
+  .main-job-content {
+    width: 80%;
+    height: 255px;
+    margin: 0 auto;
+  }
+
+  .nav li a {
+    display: block;
+    padding: 30px 5px 30px 5px;
+    font-size: 0.7em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav li a:hover {
+    background-color: #4a3671;
+    display: block;
+    padding: 30px 10px 30px 10px;
+    font-size: 0.7em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1.4em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .icons-item-text p {
+    font-size: 0.8em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 570px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .budjet-head p {
+    margin: 0 30px;
+    font-family: "Exo2Regular", sans-serif;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+
+  .standart-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 10px;
+  }
+
+  .pro-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 10px;
+  }
+
+  .shop-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 10px;
+  }
+
+  .prices-block-hour h3 {
+    margin: 15px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 40px;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 34px;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 32px;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 25px;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 17px;
+    font-size: 0.8em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 600px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .main-job-botton {
+    width: 20%;
+    height: 60px;
+    margin: 0px auto 0px auto;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .niz h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .icons-item-text {
+    width: 80%;
+    height: 92px;
+    margin: 0 auto;
+  }
+} /*  (min-width : 800px) and (max-width : 999px) */
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .nav {
+    display: none;
+  }
+
+  .btn-mobil {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-top: 12px;
+  }
+
+  .line-btn {
+    width: 80%;
+    height: 12px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1.4em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .info {
+    position: relative;
+    width: 70%;
+    height: 70px;
+    top: 250px;
+    left: 50px;
+  }
+
+  .nav-mini li a {
+    padding: 30px 5px 30px 5px;
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-mini li {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp-head h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .icons-item {
+    width: 49.5%;
+    height: 340px;
+    display: inline-block;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 925px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .info-wp-text {
+    width: 80%;
+    height: 110px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .prices-head-txt h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .prices-block-budjet {
+    width: 100%;
+    height: 134px;
+  }
+
+  .budjet-head {
+    width: 70%;
+    height: 134px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .budjet-txt {
+    width: 29.7%;
+    height: 134px;
+    float: left;
+    background-color: #3f2d5f;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .budjet-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-standart {
+    width: 100%;
+    height: 195px;
+  }
+
+  .standart-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .standart-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-head {
+    width: 60%;
+    height: 195px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .standart-txt {
+    width: 39.7%;
+    height: 195px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .prices {
+    width: 100%;
+    height: 850px;
+    padding-top: 50px;
+  }
+
+  .pro-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .pro-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-pro {
+    width: 100%;
+    height: 165px;
+  }
+
+  .pro-head {
+    width: 50%;
+    height: 165px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .pro-txt {
+    width: 49.7%;
+    height: 165px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .shop-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .shop-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-shop {
+    width: 100%;
+    height: 170px;
+  }
+
+  .shop-head {
+    width: 40%;
+    height: 170px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .shop-txt {
+    width: 59.7%;
+    height: 170px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+  }
+
+  .prices-block-hour h3 {
+    margin: 5px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .job-block {
+    width: 30%;
+    height: 200px;
+    margin-left: 15px;
+    float: left;
+  }
+
+  .main-job-content {
+    width: 80%;
+    height: 205px;
+    margin: 0 auto;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 560px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-job-btn {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 9px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-botton {
+    width: 20%;
+    height: 60px;
+    margin: 20px auto 0px auto;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    display: none;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .article {
+    width: 100%;
+    height: 136px;
+    border: 1px dotted #3f2d5f;
+  }
+
+  .article-txt-info {
+    width: 100%;
+    height: 80px;
+  }
+
+  .article-txt {
+    width: 69.7%;
+    height: 110px;
+    float: left;
+  }
+
+  .article-img {
+    width: 30%;
+    height: 110px;
+    float: left;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .news-blog-content {
+    width: 70%;
+    height: 502px;
+    margin: 30px auto;
+  }
+
+  .news-blog {
+    width: 100%;
+    height: 910px;
+    padding-top: 50px;
+  }
+} /*  (min-width : 600px) and (max-width : 799px) */
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .nav {
+    display: none;
+  }
+
+  .btn-mobil {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+
+  .line-btn {
+    width: 80%;
+    height: 12px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1.4em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .info {
+    position: relative;
+    width: 70%;
+    height: 70px;
+    top: 250px;
+    left: 50px;
+  }
+
+  .nav-mini li a {
+    padding: 30px 5px 30px 5px;
+    font-size: 1.1em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-mini li {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp-head h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .icons-item {
+    width: 49.5%;
+    height: 340px;
+    display: inline-block;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 925px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .info-wp-text {
+    width: 80%;
+    height: 110px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .prices-head-txt h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .prices-block-budjet {
+    width: 100%;
+    height: 138px;
+  }
+
+  .budjet-head {
+    width: 70%;
+    height: 138px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .budjet-txt {
+    width: 29.7%;
+    height: 138px;
+    float: left;
+    background-color: #3f2d5f;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .budjet-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .prices-block-standart {
+    width: 100%;
+    height: 185px;
+  }
+
+  .standart-head h2 {
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .standart-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .standart-head {
+    width: 60%;
+    height: 185px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .standart-txt {
+    width: 39.7%;
+    height: 185px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .prices {
+    width: 100%;
+    height: 890px;
+    padding-top: 50px;
+  }
+
+  .pro-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .pro-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .prices-block-pro {
+    width: 100%;
+    height: 165px;
+  }
+
+  .pro-head {
+    width: 50%;
+    height: 165px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .pro-txt {
+    width: 49.7%;
+    height: 165px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .shop-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .shop-head p {
+    margin: 0 30px;
+    font-size: 0.8em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .prices-block-shop {
+    width: 100%;
+    height: 200px;
+  }
+
+  .shop-head {
+    width: 40%;
+    height: 200px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .shop-txt {
+    width: 59.7%;
+    height: 200px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+  }
+
+  .prices-block-hour h3 {
+    margin: 5px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .job-block {
+    width: 29%;
+    height: 160px;
+    margin-left: 15px;
+    float: left;
+  }
+
+  .main-job-content {
+    width: 80%;
+    height: 165px;
+    margin: 0 auto;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-job-btn {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 9px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-botton {
+    width: 29%;
+    height: 60px;
+    margin: 20px auto 0px auto;
+  }
+
+  .news-blog-botton {
+    width: 29%;
+    height: 60px;
+    margin: 30px auto 0px auto;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    display: none;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .article {
+    width: 100%;
+    height: 115px;
+    border: 1px dotted #3f2d5f;
+  }
+
+  .article-img {
+    width: 30%;
+    height: 115px;
+    float: left;
+  }
+
+  .article-txt {
+    width: 69.7%;
+    height: 115px;
+    float: left;
+  }
+
+  .news-blog-content {
+    width: 70%;
+    height: 400px;
+    margin: 30px auto;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 0.8em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .news-blog {
+    width: 100%;
+    height: 825px;
+    padding-top: 50px;
+  }
+
+  .adress-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+  }
+
+  .niz h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    font-size: 1em;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info h1 {
+    font-size: 2em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-job-head h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-size: 1.4em;
+  }
+
+  .main-job-txt p {
+    color: #fff;
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .news-blog-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .news-blog-txt p {
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+} /*  (min-width : 500px) and (max-width : 799px) */
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+  .nav {
+    display: none;
+  }
+  /*
+.btn-mobil {
+	width: 50px;
+    height: 50px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+	border:1px solid #fff;
+	border-radius: 2px;
+}
+*/
+
+  .btn-mobil {
+    width: 40px;
+    height: 38px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 19px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+
+  /*
+.line-btn {
+	width: 80%;
+	height: 12px;
+	border-bottom: 1px solid #fff;
+	margin: 0 auto;
+	cursor:pointer;
+
+}
+
+*/
+
+  .line-btn {
+    width: 80%;
+    height: 9px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1.4em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .info {
+    position: relative;
+    width: 70%;
+    height: 70px;
+    top: 250px;
+    left: 50px;
+  }
+
+  .nav-mini li a {
+    padding: 30px 5px 30px 5px;
+    font-size: 1.1em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-mini li {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp-head h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .icons-item {
+    width: 49.5%;
+    height: 272px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .icons-item-text {
+    width: 100%;
+    height: 85px;
+    margin: 0 auto;
+    font-size: 0.8em;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 1422px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .info-wp-text {
+    width: 80%;
+    height: 110px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .prices-head-txt h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .prices-block-budjet {
+    width: 100%;
+    height: 175px;
+  }
+
+  .budjet-head {
+    width: 70%;
+    height: 175px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .budjet-txt {
+    width: 29.7%;
+    height: 175px;
+    float: left;
+    background-color: #3f2d5f;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .budjet-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-standart {
+    width: 100%;
+    height: 260px;
+  }
+
+  .standart-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .standart-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-head {
+    width: 60%;
+    height: 260px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .standart-txt {
+    width: 39.7%;
+    height: 260px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .prices {
+    width: 100%;
+    height: 1110px;
+    padding-top: 50px;
+  }
+
+  .pro-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .pro-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-pro {
+    width: 100%;
+    height: 250px;
+  }
+
+  .pro-head {
+    width: 50%;
+    height: 250px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .pro-txt {
+    width: 49.7%;
+    height: 250px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .shop-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .shop-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-shop {
+    width: 100%;
+    height: 235px;
+  }
+
+  .shop-head {
+    width: 40%;
+    height: 235px;
+    float: left;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .prices-block-hour {
+    width: 99.7%;
+    height: 62px;
+    border: 1px dotted #3f2d5f;
+  }
+
+  .shop-txt {
+    width: 59.7%;
+    height: 235px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+  }
+
+  .prices-block-hour h3 {
+    margin: 5px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-content {
+    width: 90%;
+    height: 621px;
+    margin: 0 auto;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+    margin-left: 112px;
+  }
+
+  .main-job-btn {
+    width: 111%;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 9px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-botton {
+    width: 36%;
+    height: 60px;
+    margin: 20px auto 0px auto;
+  }
+
+  .news-blog-botton {
+    width: 36%;
+    height: 60px;
+    margin: 30px auto 0px auto;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    display: none;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .article {
+    width: 100%;
+    height: 115px;
+    border: 1px dotted #3f2d5f;
+  }
+
+  .article-img {
+    width: 30%;
+    height: 115px;
+    float: left;
+    display: none;
+  }
+
+  .article-txt {
+    width: 100%;
+    height: 115px;
+    float: left;
+  }
+
+  .news-blog-content {
+    width: 70%;
+    height: 370px;
+    margin: 30px auto;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 0.8em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .news-blog {
+    width: 100%;
+    height: 762px;
+    padding-top: 50px;
+  }
+
+  .adress-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+  }
+
+  .niz h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    font-size: 1em;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info h1 {
+    font-size: 2em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-job-head h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-size: 1.4em;
+  }
+
+  .main-job-txt p {
+    color: #fff;
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .job-block {
+    width: 50.3%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 970px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .news-blog-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .news-blog-txt p {
+    font-size: 1em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .icons-item-text p {
+    font-size: 1em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+  }
+
+  .adress-txt {
+    width: 95%;
+    height: auto;
+    margin: 5px auto 30px auto;
+    border: 1px solid #3f2d5f;
+  }
+} /*  (min-width : 400px) and (max-width : 499px) */
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+  .adress-txt {
+    width: 95%;
+    height: auto;
+    margin: 5px auto 30px auto;
+    border: 1px solid #3f2d5f;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .btn-mobil {
+    width: 40px;
+    height: 38px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 19px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+
+  .line-btn {
+    width: 80%;
+    height: 9px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1.4em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .info {
+    position: relative;
+    width: 70%;
+    height: 70px;
+    top: 250px;
+    left: 50px;
+  }
+
+  .nav-mini li a {
+    /*padding: 30px 5px 30px 5px;*/
+    font-size: 1em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-mini li {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp-head h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .icons-item {
+    width: 85.5%;
+    height: 215px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .icons-item-text {
+    width: 100%;
+    height: 85px;
+    margin: 0 auto;
+    font-size: 0.8em;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 1270px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .info-wp-text {
+    width: 85%;
+    height: 156px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .prices-head-txt h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+    margin-top: 24px;
+  }
+
+  .prices-block-budjet {
+    width: 100%;
+    height: 175px;
+  }
+
+  .budjet-head {
+    width: 100%;
+    height: 190px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .budjet-txt {
+    width: 100%;
+    height: 94px;
+    background-color: #3f2d5f;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .budjet-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .prices-block-standart {
+    width: 100%;
+    height: 250px;
+  }
+
+  .standart-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .standart-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .standart-head {
+    width: 100%;
+    height: 215px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .standart-txt {
+    width: 100%;
+    height: 133px;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .prices {
+    width: 100%;
+    height: 1500px;
+    padding-top: 50px;
+  }
+
+  .pro-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .pro-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .prices-block-pro {
+    width: 100%;
+    height: 250px;
+  }
+
+  .pro-head {
+    width: 100%;
+    height: 175px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .pro-txt {
+    width: 100%;
+    height: 155px;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .shop-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 1em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .shop-head p {
+    margin: 0 30px;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+    margin-top: 5px;
+  }
+
+  .prices-block-shop {
+    width: 100%;
+    height: 235px;
+  }
+
+  .shop-head {
+    width: 100%;
+    height: 130px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .prices-block-hour {
+    width: 99.7%;
+    height: 82px;
+    border: 1px dotted #3f2d5f;
+    margin-top: 375px;
+  }
+
+  .shop-txt {
+    width: 100%;
+    height: 194px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+  }
+
+  .prices-block-hour h3 {
+    margin: 5px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-head {
+    width: 70%;
+    height: 52px;
+    margin: 0 auto;
+  }
+
+  .main-job-txt {
+    width: 82%;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  .main-job-content {
+    width: 90%;
+    height: 802px;
+    margin: 0 auto;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-job-btn {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 9px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-botton {
+    width: 43%;
+    height: 60px;
+    margin: auto auto 20px auto;
+  }
+
+  .article-txt-head h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .news-blog-botton {
+    width: 44%;
+    height: 60px;
+    margin: 30px auto 0px auto;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    display: none;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .article {
+    width: 100%;
+    height: 100px;
+    border: 1px dotted #3f2d5f;
+  }
+
+  .article-img {
+    width: 30%;
+    height: 115px;
+    float: left;
+    display: none;
+  }
+
+  .article-txt {
+    width: 100%;
+    height: 115px;
+    float: left;
+  }
+
+  .news-blog-content {
+    width: 70%;
+    height: 370px;
+    margin: 30px auto;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 0.8em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .news-blog {
+    width: 100%;
+    height: 762px;
+    padding-top: 50px;
+  }
+
+  .adress-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+  }
+
+  .niz h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info h1 {
+    font-size: 2em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-job-head h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-size: 1.4em;
+  }
+
+  .main-job-txt p {
+    color: #fff;
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .job-block {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 10px;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 1060px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .news-blog-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .news-blog-txt p {
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .article-txt-head {
+    width: 80%;
+    height: 60px;
+    padding-top: 12px;
+    margin: 0 auto;
+  }
+
+  .icons-item-circle {
+    width: 100%;
+    height: 172px;
+  }
+
+  .icons-item-text p {
+    font-size: 1em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+  }
+
+  .news-blog-btn {
+    width: 111%;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: #3f2d5f;
+    color: #fff;
+  }
+
+  /*
+.nav-mobil {
+    width: 100%;
+    height: 138px;
+    float: right;
+    display: block;
+    background-color: rgba(0,0,0,0.45);
+}
+*/
+} /*  (min-width : 300px) and (max-width : 399px) */
+
+@media only screen and (min-width: 200px) and (max-width: 299px) {
+  .adress-txt {
+    width: 95%;
+    height: auto;
+    margin: 5px auto 30px auto;
+    border: 1px solid #3f2d5f;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .btn-mobil {
+    width: 40px;
+    height: 38px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 19px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+
+  .line-btn {
+    width: 80%;
+    height: 9px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .logo-txt {
+    font-family: "IstokWebRegular", sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+    letter-spacing: 0.35em;
+    margin-bottom: -11px;
+    display: block;
+    font-size: 1em;
+    width: 59%;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .info {
+    position: relative;
+    width: 70%;
+    height: 70px;
+    top: 250px;
+    left: 50px;
+  }
+
+  .nav-mini li a {
+    padding: 30px 5px 30px 5px;
+    font-size: 1em;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "IstokWebRegular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-mini li {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .info-wp-text p {
+    color: #fff;
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info-wp-head h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .icons-item {
+    width: 85.5%;
+    height: 215px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .icons-item-text {
+    width: 100%;
+    height: 85px;
+    margin: 0 auto;
+    font-size: 0.8em;
+  }
+
+  .info-wp {
+    width: 100%;
+    height: 1270px;
+    background-color: #3f2d5f;
+    padding-top: 50px;
+  }
+
+  .info-wp-text {
+    width: 85%;
+    height: 156px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .prices-head-txt h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-head h2 {
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .budjet-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .prices-block-budjet {
+    width: 100%;
+    height: 175px;
+  }
+
+  .budjet-head {
+    width: 100%;
+    height: 185px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .budjet-txt {
+    width: 100%;
+    height: 94px;
+    background-color: #3f2d5f;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .budjet-head p {
+    /*margin: 0 30px;*/
+    font-size: 0.7em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-standart {
+    width: 100%;
+    height: 250px;
+  }
+
+  .standart-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .standart-head p {
+    /*margin: 0 30px;*/
+    font-size: 0.7em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .standart-head {
+    width: 100%;
+    height: 189px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .standart-txt {
+    width: 100%;
+    height: 133px;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .prices {
+    width: 100%;
+    height: 1435px;
+    padding-top: 50px;
+  }
+
+  .pro-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .pro-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .pro-head p {
+    /*margin: 0 30px;*/
+    font-size: 0.7em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-pro {
+    width: 100%;
+    height: 250px;
+  }
+
+  .pro-head {
+    width: 100%;
+    height: 151px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .pro-txt {
+    width: 100%;
+    height: 155px;
+    color: #fff;
+    background-color: #3f2d5f;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .shop-head h2 {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .shop-txt h3 {
+    margin: 15px 15px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .shop-head p {
+    /* margin: 0 30px;*/
+    font-size: 0.7em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .prices-block-shop {
+    width: 100%;
+    height: 235px;
+  }
+
+  .shop-head {
+    width: 100%;
+    height: 125px;
+    border-right: 1px dotted #3f2d5f;
+    border-bottom: 1px dotted #3f2d5f;
+    border-left: 1px dotted #3f2d5f;
+    border-top: 1px dotted #3f2d5f;
+  }
+
+  .prices-block-hour {
+    width: 99.7%;
+    height: 95px;
+    border: 1px dotted #3f2d5f;
+    margin-top: 298px;
+  }
+
+  .shop-txt {
+    width: 100%;
+    height: 194px;
+    float: left;
+    color: #fff;
+    background-color: #3f2d5f;
+  }
+
+  .prices-block-hour h3 {
+    margin: 5px 15px;
+    text-align: center;
+    color: #3f2d5f;
+    font-size: 0.8em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-head {
+    width: 70%;
+    height: 52px;
+    margin: 0 auto;
+  }
+
+  .main-job-txt {
+    width: 82%;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  .main-job-content {
+    width: 90%;
+    height: 381px;
+    margin: 0 auto;
+  }
+
+  .job-block img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+    margin-left: 66px;
+  }
+
+  .main-job-btn {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .main-job-btn h3 {
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 9px;
+    font-size: 0.9em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .main-job-botton {
+    width: 43%;
+    height: 60px;
+    margin: auto auto 10px auto;
+  }
+
+  .article-txt-head h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .news-blog-botton {
+    width: 44%;
+    height: 60px;
+    margin: 30px auto 0px auto;
+  }
+
+  .article-txt-info p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    display: none;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: none;
+  }
+
+  .article {
+    width: 100%;
+    height: 100px;
+    border: 1px dotted #3f2d5f;
+  }
+
+  .article-img {
+    width: 30%;
+    height: 115px;
+    float: left;
+    display: none;
+  }
+
+  .article-txt {
+    width: 100%;
+    height: 115px;
+    float: left;
+  }
+
+  .news-blog-content {
+    width: 70%;
+    height: 370px;
+    margin: 30px auto;
+  }
+
+  .news-blog-btn h3 {
+    text-align: center;
+    margin-top: 16px;
+    transition: 0.5s;
+    font-size: 0.8em;
+    font-family: "IstokWebRegular", sans-serif;
+  }
+
+  .news-blog {
+    width: 100%;
+    height: 762px;
+    padding-top: 50px;
+  }
+
+  .adress-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+  }
+
+  .niz h3 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .adress-txt {
+    width: 93%;
+    height: auto;
+    margin: 5px auto 30px auto;
+    border: 1px solid #3f2d5f;
+  }
+
+  .adress-txt p {
+    margin: 10px 30px 10px 30px;
+    font-size: 1em;
+    text-indent: 1.2em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .info h1 {
+    font-size: 2em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-job-head h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    font-size: 1.2em;
+  }
+
+  .main-job-txt p {
+    color: #fff;
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .job-block {
+    width: 50.3%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .news-blog-txt {
+    width: 70%;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+  }
+
+  .main-job {
+    width: 100%;
+    height: 733px;
+    padding-top: 50px;
+    background-color: #3f2d5f;
+  }
+
+  .news-blog-head h1 {
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .news-blog-txt p {
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    font-family: "Exo2Regular", sans-serif;
+  }
+
+  .article-txt-head {
+    width: 100%;
+    height: 60px;
+    padding-top: 12px;
+  }
+
+  .icons-item-circle {
+    width: 100%;
+    height: 172px;
+  }
+
+  .icons-item-text p {
+    font-size: 1em;
+    color: #fff;
+    font-family: "Exo2Regular", sans-serif;
+    text-align: center;
+  }
+
+  /*
+.nav-mobil {
+    width: 100%;
+    height: 138px;
+    float: right;
+    display: block;
+    background-color: rgba(0,0,0,0.45);
+}
+*/
+} /*  (min-width : 200px) and (max-width : 299px) */
