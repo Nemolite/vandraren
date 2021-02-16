@@ -9,21 +9,21 @@
       <p>В этом разделе собраны некоторые сайты и проекты, которые разработаны мною за последний год.</p>
   </div>
   <div class="main-job-content">
-    <a href="http://sosh6-gshum.uxp.ru/" target="_blank">
+  <a href="<?php echo ot_get_option( 'url_job_site_1' ); ?>" target="_blank">
     <div class="job-block">
-      <img src="<?php echo bloginfo('template_url'); ?>/vendor/img/pimg2.jpeg" alt="">
+      <img src="<?php echo ot_get_option( 'img_upload_1' ); ?>" alt="">
     </div>
 	</a>
-	<a href="http://gorka21.ru/" target="_blank">
+  <a href="<?php echo ot_get_option( 'url_job_site_2' ); ?>" target="_blank">
     <div class="job-block">
-      <img src="<?php echo bloginfo('template_url'); ?>/vendor/img/pimg5.jpeg" alt="">
+      <img src="<?php echo ot_get_option( 'img_upload_2' ); ?>" alt="">
     </div>
-	<a>
-	<a href="http://det-sad19.ru/" target="_blank">
+	</a>
+  <a href="<?php echo ot_get_option( 'url_job_site_3' ); ?>" target="_blank">
     <div class="job-block">
-      <img src="<?php echo bloginfo('template_url'); ?>/vendor/img/pimg3.jpeg" alt="">
+      <img src="<?php echo ot_get_option( 'img_upload_3' ); ?>" alt="">
     </div>
-    </a>
+	</a>   
   </div>
   <div class="main-job-botton">
     <a href="/portfolio/">
