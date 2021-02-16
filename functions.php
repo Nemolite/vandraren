@@ -8,16 +8,29 @@
  * @package vandraren
  */
  
- /**
- * Required: set 'ot_theme_mode' filter to true.
+/**
+ *  Настройка плагина OptionTree
+ *  Required: set 'ot_theme_mode' filter to true. * 
  */
+
 add_filter( 'ot_theme_mode', '__return_true' );
-add_filter( 'ot_show_new_layout', '__return_false' );
+add_filter( 'ot_show_new_layout', '__return_false' );//Для консоли админки 
+add_filter( 'ot_show_pages', '__return_true' );
 
 /**
  * Required: include OptionTree.
+ * Подключение OptionTree плагина в режиме разработки
  */
 require( trailingslashit( get_template_directory() ) . '/option-tree/ot-loader.php' );
+require( trailingslashit( get_template_directory() ) . '/meta-boxes/meta-boxes.php' );
+require( trailingslashit( get_template_directory() ) . '/meta-boxes/theme-options.php' );
+
+	
+/* Использование
+  в любом месте сайта подключаем с помощью этой функции
+  <?php echo ot_get_option( $option, $default ); ?>
+*/
+		
 
  
  
@@ -84,17 +97,6 @@ if ( ! function_exists( 'vandraren_setup' ) ) :
 				'script',
 			)
 		);
-		
-		/*option-tree - подключение*/
-		
-		include (get_template_directory() . '/meta-boxes/meta-boxes.php');
-		include (get_template_directory() . '/meta-boxes/theme-options.php');
-		
-		/* Использование
-		   в любом месте сайта подключаем с помощью этой функции
-		   <?php echo ot_get_option( $option, $default ); ?>
-		*/
-		
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
