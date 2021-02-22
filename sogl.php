@@ -17,19 +17,9 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-			the_post();
-            // можно конечно подключить и шаблон
-            // например как то так
-            // get_template_part( 'template-parts/content-v', get_post_type() );
-			// при этом шаблон в виде content-v.php должен быть в директории
-			// template-parts
-            // или
-            // get_template_part( 'template-parts/content', 'page' );
-            // content-page.php ->  template-parts
-            // там в шаблоне можно и разметку править  			
+			the_post();           			
 			the_title('<h1 class="entry-title-fix">', '</h1>');
-			the_content();
-			// сам контент можно стилизовать и украсить в редакторе панеля управления
+			the_content();		
 
 		endwhile; // End of the loop.
 		?>
