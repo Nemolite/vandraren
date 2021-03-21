@@ -33,7 +33,7 @@ get_header();
             <li><a href="#main-job">Портфолио</a></li>
             <li><a href="#prices_id">Цены</a></li>
             <li><a href="#adress_id">Контакты</a></li>
-            <li id="li-fix"><a href="/wp-admin/">Логин/Регистрация</a></li>
+            <li id="li-fix"><a href="<?php echo get_home_url( null, 'wp-admin/', 'https' ); ?>">Логин/Регистрация</a></li>
         </ul>
         <div class="nav-mobil">
           <ul class="nav-mini clearfix">
@@ -42,7 +42,7 @@ get_header();
             <li><a href="#main-job">Портфолио</a></li>
             <li><a href="#prices_id">Цены</a></li>
             <li><a href="#adress_id">Контакты</a></li>
-            <li><a href="/wp-admin/">Логин/Регистрация</a></li>
+            <li><a href="<?php echo get_home_url( null, 'wp-admin/', 'https' ); ?>">Логин/Регистрация</a></li>
         </ul>
         </div>
       </nav>
@@ -210,22 +210,7 @@ get_header();
     </div>
 </div><!-- prices -->
 </div><!-- class="foot" -->
-<div class="adress" id="adress_id">
-  <div class="adress-head">
-     <h1>Мои контакты и коротко о себе</h1>
-  </div>
-  <div class="adress-txt">
-   
-    <p>У вас есть отличные идеи? Вы хотите, чтобы у вас был отличный сайт, или же хотите иметь интернет-магазин. Может быть вам есть что рассказать миру и вы хотите об этом написать в своем блоге. </p>
-    <p>Я готов помочь вам  в этом. Напишите на мой почтовый ящик все свои пожелания или оформите через сайт свой заказ. Можете написать в любых мессенджерах.Либо же просто позвоните мне. Или закажите обратный звонок</p>
-     <p>Я - разработчик-фрилансер.  Основные направления моей  деятельности  - сайты, проекты и веб-разработка.  Опыт работы в данном направлении  - 5 лет. Стек технологий, которые я использую – HTML, CSS , JavaScript, MySql, PHP. </p>
-     <p>Мои контактные данные e-mail: <span>g16052015@mail.ru</span> phone: <span>8-962-598-58-91</span></p>
-
-  </div>
-
-</div><!-- class="adress" -->
- 
-	
+<?php vandraren_about_me_html(); ?>	
 <?php
 /*get_sidebar();*/
 get_footer();

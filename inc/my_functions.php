@@ -46,5 +46,18 @@ function pagination($pages = '', $range = 4)
      }
 }
 
-
+/**
+ * Мои контакты и коротко о себе (OptionTree)
+ */
+function vandraren_about_me_html(){
+?>  
+<div class="adress" id="adress_id">
+    <div class="adress-head">
+        <h1><?php echo ot_get_option( 'vandraren_title' ); ?></h1>
+    </div>
+    <div class="adress-txt">
+         <?php echo ot_get_option( 'vandraren_textarea' ); ?>
+    </div>
+</div><!-- class="adress" -->
+<?php }
 ?>
