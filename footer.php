@@ -16,7 +16,7 @@
 			<a href="#">
 			<h3>vandraren</h3>
 			</a>
-			<p><i class="fa fa-copyright" aria-hidden="true"></i>  2015-2020.Разработка web-проектов</p>
+			<p><i class="fa fa-copyright" aria-hidden="true"></i>  2015-2021.Разработка web-проектов</p>
 			
             <a href="/users/" target="_blank">
 			<p>Пользовательское соглашение</p>
