@@ -193,7 +193,7 @@ function vandraren_scripts() {
 	 /* main script*/
 	wp_enqueue_script( 'jquery341', get_template_directory_uri() . '/vendor/js/jquery-3.4.1.min.js', array(), _S_VERSION, true ); 
 	wp_enqueue_script( 'vegas-js', get_template_directory_uri() . '/vendor/js/vegas.js', array(), _S_VERSION, true );  
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/vendor/js/main.js', array(), _S_VERSION, true );  
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/vendor/js/main.js', array('jquery341'), _S_VERSION, true );  
 	
 	 /* main script*/
 	wp_enqueue_script( 'vandraren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
