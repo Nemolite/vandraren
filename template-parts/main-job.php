@@ -19,9 +19,9 @@
       <img src="<?php echo ot_get_option( 'img_upload_2' ); ?>" alt="">
     </div>
 	</a>
-  <a href="<?php echo ot_get_option( 'url_job_site_3' ); ?>" target="_blank">
+  <a href="<?php echo ot_get_option( 'url_job_site_10' ); ?>" target="_blank">
     <div class="job-block">
-      <img src="<?php echo ot_get_option( 'img_upload_3' ); ?>" alt="">
+      <img src="<?php echo ot_get_option( 'img_upload_10' ); ?>" alt="">
     </div>
 	</a>   
   </div>

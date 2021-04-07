@@ -24,7 +24,7 @@ get_header();
 
 
 
-           <?php for ($i=1;$i<=10;$i++) { ?>
+           <?php for ($i=1;$i<=11;$i++) { ?>
 <?php 
 $url_job_site = 'url_job_site_'.$i;
 $img_upload = 'img_upload_'.$i;
