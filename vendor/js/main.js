@@ -5,11 +5,11 @@ $(".fon-header").vegas({
     transition: 'zoomOut',
     transitionDuration: 3000,
     slides: [
-        { src: "vendor/img/fon1.jpg" },
-        { src: "vendor/img/fon2.jpg" },
-        { src: "vendor/img/fon3.jpg" },
-        { src: "vendor/img/fon4.jpg" },
-        { src: "vendor/img/fon5.jpg" }        
+        { src: "https://vandraren.ru/wp-content/uploads/2021/03/fon1.jpg" },
+        { src: "https://vandraren.ru/wp-content/uploads/2021/03/fon2.jpg" },
+        { src: "https://vandraren.ru/wp-content/uploads/2021/03/fon3.jpg" },
+        { src: "https://vandraren.ru/wp-content/uploads/2021/03/fon4.jpg" },
+        { src: "https://vandraren.ru/wp-content/uploads/2021/03/fon5.jpg" }        
            
     ]
 });
