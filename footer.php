@@ -52,13 +52,15 @@
 			    <div class="menu-blog">
 			    	<h4>Цены</h4>
 			    </div>
+				
 		         </a>
 		         <p id="foot-fix-line"></p>
-		          <a href="#">
+		          <a href="#adress_id">
 			    <div class="menu-blog">
-			    	<h4>Логин / Регистрация</h4>
+			    	<h4>Контакты</h4>
 			    </div>
 		         </a>
+				 
 			</div>
 		</div>
 		<div class="main-footer-block">

@@ -33,7 +33,9 @@ get_header();
             <li><a href="#main-job">Портфолио</a></li>
             <li><a href="#prices_id">Цены</a></li>
             <li><a href="#adress_id">Контакты</a></li>
+            <!--
             <li id="li-fix"><a href="<?php echo get_home_url( null, 'wp-admin/', 'https' ); ?>">Логин/Регистрация</a></li>
+            -->
         </ul>
         <div class="nav-mobil">
           <ul class="nav-mini clearfix">
@@ -42,7 +44,9 @@ get_header();
             <li><a href="#main-job">Портфолио</a></li>
             <li><a href="#prices_id">Цены</a></li>
             <li><a href="#adress_id">Контакты</a></li>
+            <!--
             <li><a href="<?php echo get_home_url( null, 'wp-admin/', 'https' ); ?>">Логин/Регистрация</a></li>
+            -->
         </ul>
         </div>
       </nav>
