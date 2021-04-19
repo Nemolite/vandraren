@@ -60,4 +60,45 @@ function vandraren_about_me_html(){
     </div>
 </div><!-- class="adress" -->
 <?php }
+
+
+/**
+ * Произвольные типы записей Мои работы
+ */
+
+function vandraren_my_jobs(){
+	$labels = array(
+		'name'               => 'Проекты', 
+		'singular_name'      => 'Проект', 
+		'add_new'            => 'Добавить проект',
+		'add_new_item'       => 'Добавить новый проект',
+		'edit_item'          => 'Редактировать проект',
+		'new_item'           => 'Новый проект',
+		'view_item'          => 'Посмотреть проект',
+		'search_items'       => 'Найти проект',
+		'not_found'          => 'Проектов не найдено',
+		'not_found_in_trash' => 'В корзине проектов не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Мои проекты'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true,  
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-format-gallery', 
+		'menu_position' => 20, 
+		'supports' => array( 'title', 'thumbnail','custom-fields')
+	);	
+	register_post_type('myjobs', $args  );
+}
+
+add_action('init', 'vandraren_my_jobs');
+
+function vandraren_get_job_url(){
+    return  get_post_meta( get_the_ID(), 'url', true );
+    
+}
+
 ?>
